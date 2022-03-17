@@ -1,0 +1,17 @@
+func fibonacci(n) {
+  a = 0;
+  b = 1;
+  while (n) {
+    tmp = a + b;
+    a = b;
+    b = tmp;
+    n = n - 1;
+  }
+
+  return a;
+}
+
+func main() {
+  x = fibonacci(10);
+  return 0;
+}
